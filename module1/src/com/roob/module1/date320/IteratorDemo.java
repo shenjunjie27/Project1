@@ -13,15 +13,17 @@ public class IteratorDemo {
         coll.add("B");
         coll.add("C");
 
-        Iterator<String> it = coll.iterator();
+        Iterator<String> it = coll.iterator();//迭代器
         while (it.hasNext()) {
             String s = it.next();
             System.out.println(s);
+        }
 
+        System.out.println("=============");
             int arr[] = {1, 3, 5, 7, 9};
             for (int i : arr)
                 System.out.println(i);
-        }
+
         for (String s : coll)
             System.out.println(s);//集合也是可以遍历的
     }
