@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Student {
     private String name;
     private int age;
-
+//toString方法如果不重写的话，默认输出的是对象的所在类的位置@内存地址
     @Override
     public String toString() {
         return "Student{" +
